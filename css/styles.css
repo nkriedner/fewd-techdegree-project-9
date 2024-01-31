@@ -1,5 +1,42 @@
-* {
-    padding: ß;
+/* CSS RESET & GENERAL STYLES */
+*,
+*::after,
+*::before {
+    padding: 0;
     margin: 0;
+    box-sizing: inherit; /* inherits the border-box from body */
+}
+html {
+    font-size: 62.5%; /* => 10px equals 1rem */
+    scroll-behavior: smooth;
+}
+body {
     box-sizing: border-box;
+    font-size: 1.6rem; /* equals 16px */
+    font-family: sans-serif;
+    min-height: 100vh; /* <--- check */
+    display: flex;
+    flex-direction: column;
+
+    /* linear gradient - credit to uigradients.com */
+    background: #0f0c29; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #24243e,
+        #302b63,
+        #0f0c29
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* / linear gradient - credit to uigradients.com */
+
+    color: #fff;
+}
+li {
+    list-style: none;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s;
 }
