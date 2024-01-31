@@ -40,6 +40,9 @@ a {
     color: inherit;
     transition: all 0.3s;
 }
+.hide-element {
+    display: none;
+}
 
 /* HEADER & NAVIGATION STYLES */
 .header {
@@ -56,9 +59,30 @@ a {
     font-size: 3.2rem;
     animation: slideInRight 1s ease-out;
 }
+.header__nav--main {
+    position: fixed;
+    z-index: 98;
+    top: 0;
+    left: -100%;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #302b63;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: left 0.5s;
+}
+.header__nav--main.is-active {
+    left: 0;
+    text-align: center;
+}
+.header__nav--main li {
+    padding: 2rem 0;
+}
 .hamburger {
     display: block;
     position: fixed;
+    z-index: 1000;
     top: 1.7rem;
     right: 0.8rem;
     width: 40px;
