@@ -76,8 +76,13 @@ a {
     left: 0;
     text-align: center;
 }
-.header__nav--main li {
-    padding: 2rem 0;
+.header__nav--main li a {
+    padding: 1.6rem;
+}
+.header__nav--main li a.btn-contact {
+    background-color: #75be07;
+    color: white;
+    border-radius: 20px;
 }
 .hamburger {
     display: block;
