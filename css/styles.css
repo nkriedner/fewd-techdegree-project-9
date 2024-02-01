@@ -132,6 +132,42 @@ main {
     animation: fadeIn 1.5s ease-out;
 }
 
+/* FOOTER STYLES */
+footer {
+    padding: 8rem 0;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    .header__logo {
+        font-size: 4rem;
+    }
+    .header__nav--main {
+        position: static;
+        flex-direction: row;
+        width: auto;
+        min-height: auto;
+        background-color: transparent;
+    }
+    .header__nav--main li {
+        padding: 1.6rem;
+    }
+    .hamburger {
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .header {
+        flex-direction: row;
+        margin-bottom: 3.2rem;
+    }
+}
+
 /* KEYFRAME ANIMATION STYLES */
 @keyframes slideInRight {
     0% {
