@@ -158,6 +158,7 @@ footer {
         width: auto;
         min-height: auto;
         background-color: transparent;
+        animation: slideInLeft 1s ease-out;
     }
     .header__nav--main li {
         padding: 1.6rem;
