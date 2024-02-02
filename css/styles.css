@@ -124,7 +124,7 @@ a {
     transform: scale(1.05) rotate(30deg);
 }
 #color-palette-preview {
-    display: none;
+    /* display: none; */
     position: absolute;
     width: 100px;
     top: 75%;

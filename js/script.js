@@ -58,9 +58,9 @@ colorPaletteIcon.addEventListener("click", () => {
     }
 });
 
-document.querySelector(".color-palette-icon").addEventListener("mouseover", () => {
-    colorPalettePreview.style.display = "block";
-});
-document.querySelector(".color-palette-icon").addEventListener("mouseout", () => {
-    colorPalettePreview.style.display = "none";
-});
+// document.querySelector(".color-palette-icon").addEventListener("mouseover", () => {
+//     colorPalettePreview.style.display = "block";
+// });
+// document.querySelector(".color-palette-icon").addEventListener("mouseout", () => {
+//     colorPalettePreview.style.display = "none";
+// });
