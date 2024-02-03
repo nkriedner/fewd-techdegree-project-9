@@ -182,6 +182,43 @@ a {
     transform: rotate(45deg) translate(-9px, -8px);
 }
 
+/* HERO SECTION */
+.header-hero-bg {
+    /* background-image: linear-gradient(to right, rgba(73, 50, 64, 0.9), rgb(255, 0, 153, 0.9)),
+        url("../img/coding-1.jpg"); */
+    /* background-image: linear-gradient(to right, rgb(143, 148, 251, 0.9), rgb(78, 84, 200, 0.9)),
+        url("../img/coding-1.jpg"); */
+    /* background-image: linear-gradient(to right, rgba(36, 36, 62, 0.9), rgba(48, 43, 99, 0.9), rgba(15, 12, 41, 0.9)),
+        url("../img/coding-1.jpg"); */
+    background-image: url("../img/coding-1.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: repeat-y;
+}
+.header-hero-bg-overlay {
+    background-image: linear-gradient(to right, rgb(143, 148, 251, 0.9), rgb(78, 84, 200, 0.9));
+    background-image: linear-gradient(to right, rgba(36, 36, 62, 0.9), rgba(48, 43, 99, 0.9), rgba(15, 12, 41, 0.9));
+}
+.hero-section {
+    font-size: 3rem;
+    font-size: 2rem;
+    padding: 10rem 3rem;
+    min-height: calc(100vh - 70.5px);
+}
+.hero-quote {
+    /* font-style: italic; */
+    display: inline;
+    color: greenyellow;
+    color: rgb(165, 165, 255);
+}
+.hero-message {
+    text-align: right;
+    font-style: italic;
+}
+.hero-message::first-letter {
+    font-size: 2em;
+}
+
 /* MAIN CONTENT STYLES */
 main {
     max-width: 1200px;
@@ -299,17 +336,12 @@ main section img.profile-img {
     display: block;
     position: absolute;
     z-index: 1000;
-    color: black;
-    /* background-color: white; */
     color: white;
     font-size: 2rem;
     font-size: 1.2rem;
-    /* padding: 1rem; */
     border-radius: 10px;
-    /* text-align: center; */
 }
 .contact-icon-container {
-    /* display: flex; */
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -393,6 +425,9 @@ footer {
     main section {
         padding: 4.8rem 3.2rem;
     }
+    .hero-section {
+        min-height: calc(100vh - 173.5px);
+    }
     .contact-icon-container {
         grid-template-columns: 1fr 1fr;
         row-gap: 7.5rem;
@@ -428,6 +463,10 @@ footer {
     }
     .hamburger {
         display: none;
+    }
+    .hero-section {
+        min-height: calc(100vh - 125.5px);
+        font-size: 2rem;
     }
     .portfolio-images {
         grid-template-columns: 1fr 1fr;
@@ -466,6 +505,12 @@ footer {
     .header {
         flex-direction: row;
         margin-bottom: 3.2rem;
+    }
+    .header__logo {
+        font-size: 4.75rem;
+    }
+    .hero-section {
+        font-size: 3rem;
     }
     .portfolio-images {
         grid-template-columns: 1fr 1fr 1fr;
