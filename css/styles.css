@@ -197,7 +197,7 @@ main section {
     animation: fadeIn 1.5s ease-out;
 }
 main section h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 /* portfolio section */
 .portfolio-images {
@@ -302,6 +302,7 @@ main section h2 {
     align-items: center;
     justify-items: center;
     row-gap: 5rem;
+    margin-top: 6rem;
 }
 
 .contact-icon svg {
@@ -325,6 +326,44 @@ main section h2 {
 }
 .email-icon {
     fill: rgb(255, 70, 70);
+}
+#contact hr {
+    margin-top: 5rem;
+}
+
+.newsletter-registration {
+    margin: 6rem 0 3rem 0;
+}
+.newsletter-registration h3 {
+    font-family: "Dancing Script";
+    font-size: 3.5rem;
+    text-align: center;
+    /* font-style: italic; */
+    margin-bottom: 2rem;
+}
+.newsletter-registration form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+.newsletter-registration label,
+.newsletter-registration input,
+.newsletter-registration button {
+    margin: 1rem 0;
+}
+.newsletter-registration input {
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
+}
+.newsletter-registration button {
+    padding: 2rem 1rem;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background: rgb(95, 180, 95);
+    color: white;
+    border-radius: 10px;
+    font-size: 2.5rem;
 }
 
 /* FOOTER STYLES */
@@ -388,6 +427,28 @@ footer {
     }
     .contact-icon-container {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .newsletter-registration h3 {
+        font-size: 6rem;
+        margin-bottom: 5rem;
+    }
+    .newsletter-registration form {
+        max-width: 700px;
+        margin: auto;
+    }
+    .newsletter-registration form div {
+        flex-direction: row;
+    }
+    .newsletter-registration label {
+        min-width: 8rem;
+    }
+    .newsletter-registration input {
+        flex: 1;
+        margin: 0;
+        margin-left: auto;
+    }
+    .newsletter-registration button {
+        width: 100%;
     }
 }
 @media screen and (min-width: 1024px) {
