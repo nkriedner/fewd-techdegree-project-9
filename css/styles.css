@@ -126,12 +126,13 @@ a {
 }
 #color-palette-preview {
     /* display: none; */
-    position: absolute;
+    /* position: absolute; */
     width: 100px;
-    top: 75%;
-    left: 25%;
+    /* top: 75%;
+    left: 25%; */
     width: 50%;
     height: 40px;
+    margin: 0 auto;
     border-radius: 20px;
     background: yellow;
     /* transform: translate(130px, 200px); */
@@ -190,7 +191,7 @@ main {
 }
 main section {
     background-color: #faeeee;
-    padding: 4.8rem 3.2rem;
+    padding: 4.8rem 1.2rem;
     border-radius: 5px;
     margin-bottom: 8rem;
     animation: fadeIn 1.5s ease-out;
@@ -246,6 +247,9 @@ main section h2 {
     border-radius: 10px;
     transition: all 0.5s;
 }
+.figcaption-container figcaption a span {
+    display: none;
+}
 .figcaption-container figcaption a:hover {
     background-color: #74e074;
     color: #0c420e;
@@ -291,6 +295,37 @@ main section h2 {
     border-radius: 10px;
     /* text-align: center; */
 }
+.contact-icon-container {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    row-gap: 5rem;
+}
+
+.contact-icon svg {
+    width: 12rem;
+    height: 12rem;
+}
+.github-icon {
+    fill: black;
+}
+.teamtreehouse-icon {
+    fill: #299a2d;
+}
+.facebook-icon {
+    fill: #4e54c8;
+}
+.phone-icon {
+    fill: orange;
+}
+.telegram-icon {
+    fill: rgb(105, 105, 239);
+}
+.email-icon {
+    fill: rgb(255, 70, 70);
+}
 
 /* FOOTER STYLES */
 footer {
@@ -300,6 +335,16 @@ footer {
 }
 
 /* MEDIA QUERIES */
+
+@media screen and (min-width: 450px) {
+    main section {
+        padding: 4.8rem 3.2rem;
+    }
+    .contact-icon-container {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 7.5rem;
+    }
+}
 @media screen and (min-width: 768px) {
     .header {
         flex-direction: column;
@@ -341,6 +386,9 @@ footer {
     .image-container:hover .figcaption-container figcaption {
         font-size: 1.5rem;
     }
+    .contact-icon-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 @media screen and (min-width: 1024px) {
     .header {
@@ -349,6 +397,12 @@ footer {
     }
     .portfolio-images {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .figcaption-container figcaption a span {
+        /* display: block; */
+    }
+    .contact-icon-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
 
