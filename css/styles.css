@@ -26,7 +26,7 @@ body {
     box-sizing: border-box;
     font-size: 1.6rem; /* equals 16px */
     font-family: sans-serif;
-    min-height: 100vh; /* <--- check */
+    /* min-height: 100vh;  */
     display: flex;
     flex-direction: column;
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
@@ -150,9 +150,10 @@ a {
 
 /* HERO SECTION STYLES */
 .hero-bg {
-    background-image: url("../img/coding-1.jpg");
+    background-image: url("../img/coding-4-2.jpg");
     background-size: cover;
     background-position: top;
+    /* clip-path: polygon(0 100vh, 0 0, 100vw 0, 100vw 80vh); */
 }
 .hero-bg-overlay {
     background-image: linear-gradient(to right, rgba(36, 36, 62, 0.9), rgba(48, 43, 99, 0.9), rgba(15, 12, 41, 0.9));
@@ -164,7 +165,7 @@ a {
 }
 .hero-quote {
     color: rgb(165, 165, 255);
-    animation: fadeIn 3s ease-out 1.5s backwards;
+    animation: fadeIn 3s ease-out 0.5s backwards;
 }
 .hero-message {
     color: greenyellow;
@@ -186,23 +187,37 @@ main {
 main section {
     background-color: #faeeee;
     padding: 4.8rem 1.2rem;
-    border-radius: 5px;
-    margin-bottom: 8rem;
+    margin: 0 0.5rem 10rem 0.5rem;
 }
 main section h2 {
     margin-bottom: 4rem;
 }
-main section#about * {
-    margin-bottom: 1.5rem;
+#about p {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 main section h4 {
     font-size: 3rem;
     font-weight: normal;
 }
-.profile-img {
-    max-width: 30%;
-    float: left;
-    padding-right: 2rem;
+.about-background,
+.about-education,
+.about-vision {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 5rem;
+}
+#about hr {
+    /* display: none; */
+    margin-bottom: 5rem;
+}
+.background-img,
+.education-img,
+.vision-img {
+    width: 100%;
+    /* float: left; */
+    margin-right: 2rem;
+    border-radius: 10px;
 }
 /* portfolio section */
 .portfolio-images {
@@ -401,8 +416,45 @@ footer {
         display: none;
     }
     .hero-section {
-        min-height: calc(100vh - 125.5px);
+        min-height: calc(120vh - 125.5px);
+        min-height: calc(120vh - 173.5px);
         font-size: 2rem;
+    }
+    main section {
+        margin: 0 1rem 15rem 1rem;
+        border-radius: 10px;
+    }
+    #about p {
+        margin-top: 2.5rem;
+        font-size: 2.2rem;
+    }
+    .about-background,
+    .about-education,
+    .about-vision {
+        display: block;
+        margin-bottom: 5rem;
+        clear: both;
+        margin-bottom: 10rem;
+        margin-top: 3rem;
+    }
+
+    .background-img {
+        width: 40%;
+        float: right;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+    .education-img {
+        width: 40%;
+        float: left;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+    .vision-img {
+        width: 40%;
+        float: right;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
     }
     .portfolio-images {
         grid-template-columns: 1fr 1fr;
@@ -438,6 +490,13 @@ footer {
     }
 }
 @media screen and (min-width: 1024px) {
+    main section {
+        border-radius: 5px;
+    }
+    .hero-section {
+        min-height: calc(120vh - 125.5px);
+        /* font-size: 2rem; */
+    }
     .header {
         flex-direction: row;
         margin-bottom: 3.2rem;
@@ -447,6 +506,10 @@ footer {
     }
     .hero-section {
         font-size: 3rem;
+    }
+    .background-img {
+        width: 25%;
+        margin-left: 5rem;
     }
     .portfolio-images {
         grid-template-columns: 1fr 1fr 1fr;
