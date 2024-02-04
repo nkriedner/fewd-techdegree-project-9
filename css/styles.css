@@ -219,7 +219,8 @@ main section h4 {
     margin-right: 2rem;
     border-radius: 10px;
 }
-/* portfolio section */
+
+/* PORTFOLIO SECTION */
 .portfolio-images {
     display: grid;
     grid-template-columns: 1fr;
@@ -228,20 +229,22 @@ main section h4 {
 .portfolio-images img {
     max-width: 100%;
     border: 5px solid #392e9e;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .image-container {
-    /* position: relative; */
     transition: all 0.5s;
 }
 .figcaption-container {
     transition: all 0.5s;
     letter-spacing: 0.15rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
 }
 .figcaption-container figcaption {
     display: none;
     padding: 1rem;
     text-align: center;
+    font-size: 1.2rem;
 }
 .figcaption-container figcaption h3 {
     margin-bottom: 1rem;
@@ -261,7 +264,7 @@ main section h4 {
 .figcaption-container figcaption a:hover {
     background-color: #74e074;
     color: #0c420e;
-    transform: scale(1.05) translateY(0.5rem);
+    transform: scale(1.05) translateY(-0.25rem);
 }
 .figcaption-container .view-icon {
     display: inline-block;
@@ -270,7 +273,7 @@ main section h4 {
     fill: #227325;
 }
 .image-container:hover {
-    transform: scale(1.01) translateY(0.5rem);
+    transform: scale(1.01) translateY(-0.5rem);
 }
 .image-container:hover .figcaption-container {
     position: absolute;
@@ -293,9 +296,8 @@ main section h4 {
     position: absolute;
     z-index: 1000;
     color: white;
-    font-size: 2rem;
-    font-size: 1.2rem;
     border-radius: 10px;
+    /* font-size: 2.01em; */
 }
 .contact-icon-container {
     display: grid;
@@ -449,7 +451,6 @@ footer {
         margin-bottom: 10rem;
         margin-top: 3rem;
     }
-
     .background-img {
         width: 40%;
         float: right;
