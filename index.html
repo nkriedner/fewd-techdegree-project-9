@@ -417,16 +417,18 @@
                 <hr />
                 <div class="newsletter-registration">
                     <h3>Conscious Coding Newsletter</h3>
-                    <form action="index.html">
+                    <!-- Form sent via web3forms api -->
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="f42e939b-bcf4-4c2b-af96-817815ccb3bf" />
                         <div>
                             <label for="name">Name:</label>
-                            <input type="text" id="name" />
+                            <input type="text" id="name" name="name" required />
                         </div>
                         <div>
                             <label for="email">Email:</label>
-                            <input type="email" id="email" />
+                            <input type="email" id="email" name="email" required />
                         </div>
-                        <button type="submit">Register</button>
+                        <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </section>

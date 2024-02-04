@@ -309,6 +309,12 @@ main section h4 {
 .contact-icon svg {
     width: 12rem;
     height: 12rem;
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+.contact-icon svg:hover {
+    transform: scale(1.05);
+    opacity: 1;
 }
 .github-icon {
     fill: black;
@@ -366,6 +372,12 @@ main section h4 {
     border-radius: 10px;
     font-size: 2.5rem;
     width: 100%;
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+.newsletter-registration button:hover {
+    opacity: 1;
+    /* transform: scale(1.05); */
 }
 
 /* FOOTER STYLES */
